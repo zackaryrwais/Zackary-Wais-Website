@@ -1,7 +1,7 @@
 project:
   type: website
   output-dir: docs
-
+    
 website:
   title: "Zackary Wais Website"
 navbar:
@@ -9,7 +9,7 @@ navbar:
     - text: "Home"
       href: index.qmd
     - text: "Bio"
-      href: bio.qmd
+      href: Bio.qmd
 
 
 format:
@@ -19,4 +19,3 @@ format:
     toc: true
 
 editor: visual
-

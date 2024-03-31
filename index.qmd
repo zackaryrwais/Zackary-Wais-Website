@@ -1,19 +1,60 @@
 ---
 title: "Zackary Wais Website"
+engine: knitr
+freeze: false
+cv:
+  pdf: "resume.pdf"
+  pdf2: "coverletter.pdf"
 ---
 
-This is a Quarto website.
-
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
-
-```{r}
-
+```{css, echo=FALSE}
+#title-block-header .description {
+    display: none;
+}
 ```
 
-Hello! My name is Zackary Wais, and I am currently pursuing a Bachelor of Science with a major in Mathematics and minors in Statistics and French, alongside the business fundamentals certificate at the University of Toronto. My academic journey is deeply intertwined with my passion for analyzing patterns, solving complex problems, and utilizing statistical methods to make informed decisions. This passion extends beyond the classroom into my professional experiences.
+```{css echo=FALSE}
+.embed-container {
+    position: relative;
+    padding-bottom: 129%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+}
 
-My career began with a introduction to the search fund model from the Stanford GSB, ultimately leading me to intern at Baton in New York as a Finance Intern and at Huntstone Capital in Toronto as a Private Equity Senior Analyst, among other roles. These experiences allowed me to implement dynamic financial models, conduct comprehensive analyses, and leverage CRM software to evaluate investment opportunities and enhance investor presentations.
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
 
-Beyond my academic and professional life, I have been involved in extracurricular activities at the University of Toronto, serving as the Director of Corporate Relations for the University of Toronto Sports Business club and as a Business Development Associate for the University of Toronto Consulting Association. These roles have honed my leadership and strategic planning skills, as I've secured partnerships, managed databases, and organized events to foster industry relationships.
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+```
 
-As I continue to navigate my academic and professional journey, I am eager to apply my statistical knowledge and analytical skills to new experiences both in and outside of the classroom!
+```{=html}
+<p class="text-center">
+  <a class="btn btn-primary btn-lg cv-download" href="`r rmarkdown::metadata$cv$pdf`" target="_blank">
+    <i class="fa-solid fa-file-arrow-down"></i>&ensp;Download current CV
+  </a>
+</p>
+
+<div class="embed-container">
+  <iframe src="`r rmarkdown::metadata$cv$pdf`" style="border: 0.5px"></iframe>
+</div>
+<div class="embed-container">
+  <iframe src="`r rmarkdown::metadata$cv$pdf2`" style="border: 0.5px"></iframe>
+</div>
+```
+---
