@@ -1,14 +1,6 @@
 ---
-title: "Zackary Wais Website"
+title: "Zackary Wais Bio"
 ---
-
-This is a Quarto website.
-
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
-
-```{r}
-
-```
 
 Hello! My name is Zackary Wais, and I am currently pursuing a Bachelor of Science with a major in Mathematics and minors in Statistics and French, alongside the business fundamentals certificate at the University of Toronto. My academic journey is deeply intertwined with my passion for analyzing patterns, solving complex problems, and utilizing statistical methods to make informed decisions. This passion extends beyond the classroom into my professional experiences.
 

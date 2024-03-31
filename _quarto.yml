@@ -1,13 +1,16 @@
 project:
   type: website
+  output-dir: docs
 
 website:
   title: "Zackary Wais Website"
-  navbar:
-    left:
-      - href: index.qmd
-        text: Home
-      - about.qmd
+navbar:
+  left:
+    - text: "Home"
+      href: index.qmd
+    - text: "Bio"
+      href: bio.qmd
+
 
 format:
   html:
